@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book a Ride — SwiftBike</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/index.html" class="brand">Swift<span>Bike</span></a>
+      <nav id="mainNav2" class="nav-links">
+        <a href="/rides.html">Rides</a>
+        <a href="/delivery.html">Delivery</a>
+        <a href="/partner.html">Become a Rider</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger2" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1>Book a Ride</h1>
+      <p class="lead">Quick city rides — affordable fares. Enter pickup & drop and we’ll assign a rider.</p>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h3>Book Now</h3>
+        <form id="rideForm" class="form">
+          <label>Full name<input type="text" name="name" required></label>
+          <label>Phone<input type="tel" name="phone" required></label>
+          <label>Pickup address<input type="text" name="pickup" required></label>
+          <label>Drop address<input type="text" name="drop" required></label>
+          <label>Time<input type="datetime-local" name="time"></label>
+          <label>Payment method
+            <select name="payment">
+              <option value="cash">Cash</option>
+              <option value="card">Card</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Request Ride</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Estimated Fare</h3>
+        <div class="fare-box">
+          <p>Base fare: <strong>PKR 120</strong></p>
+          <p>Per km: <strong>PKR 20</strong></p>
+          <p>Minimum: <strong>PKR 120</strong></p>
+        </div>
+
+        <h3>Service Areas</h3>
+        <ul class="simple-list">
+          <li>Islamabad</li>
+          <li>Rawalpindi</li>
+          <li>Gujranwala</li>
+        </ul>
+
+        <h3>Safety & Comfort</h3>
+        <p>All riders wear helmets and follow health & safety protocols. Vehicles are regularly checked.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer small">
+    <div class="container">© <span id="year2"></span> SwiftBike</div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+    document.getElementById('rideForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Ride requested! (This demo form does not send data.)');
+    });
+    document.getElementById('hamburger2').addEventListener('click', ()=>{
+      document.getElementById('mainNav2').classList.toggle('open');
+      document.getElementById('hamburger2').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+

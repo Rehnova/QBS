@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Become a Rider — SwiftBike</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/index.html" class="brand">Swift<span>Bike</span></a>
+      <nav id="mainNav4" class="nav-links">
+        <a href="/rides.html">Rides</a>
+        <a href="/delivery.html">Delivery</a>
+        <a href="/partner.html">Become a Rider</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger4" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1>Join Our Rider Team</h1>
+      <p class="lead">Flexible shifts, timely payouts and rider support. Start earning in days.</p>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h3>Rider Application</h3>
+        <form id="riderForm" class="form">
+          <label>Full name<input type="text" name="name" required></label>
+          <label>Phone<input type="tel" name="phone" required></label>
+          <label>CNIC / ID number<input type="text" name="id" required></label>
+          <label>City<input type="text" name="city" required></label>
+          <label>Vehicle registration<input type="text" name="vehicle" required></label>
+          <label>Upload documents<input type="file" name="docs"></label>
+          <button class="btn btn-primary" type="submit">Apply</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Rider Benefits</h3>
+        <ul class="simple-list">
+          <li>Weekly payouts</li>
+          <li>Fuel allowances</li>
+          <li>Insurance coverage while on delivery</li>
+          <li>Rider support line</li>
+        </ul>
+
+        <h3>Requirements</h3>
+        <p>Valid ID, valid vehicle papers, and a working smartphone.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer small">
+    <div class="container">© <span id="year4"></span> SwiftBike</div>
+  </footer>
+
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+    document.getElementById('riderForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Application submitted! (Demo only)');
+    });
+    document.getElementById('hamburger4').addEventListener('click', ()=>{
+      document.getElementById('mainNav4').classList.toggle('open');
+      document.getElementById('hamburger4').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

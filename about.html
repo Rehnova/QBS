@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — SwiftBike</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/index.html" class="brand">Swift<span>Bike</span></a>
+      <nav id="mainNav5" class="nav-links">
+        <a href="/rides.html">Rides</a>
+        <a href="/delivery.html">Delivery</a>
+        <a href="/partner.html">Become a Rider</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger5" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1>About SwiftBike</h1>
+      <p class="lead">We are a local bike service connecting riders and businesses since 20XX. Our mission is to provide fast, reliable and affordable transport.</p>
+    </section>
+
+    <section class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7e2d7c1f9d6a8" alt="Founder">
+        <h4>Founder — Saad Khan</h4>
+        <p>Started with one bike, now supporting hundreds of riders across the city.</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a9f4a1b9f6c" alt="Operations lead">
+        <h4>Operations — Maria Ali</h4>
+        <p>Ensures on-time pickups and rider satisfaction.</p>
+      </div>
+    </section>
+
+    <section class="values container">
+      <h3>Our Values</h3>
+      <ul class="simple-list">
+        <li>Customer first</li>
+        <li>Safety and trust</li>
+        <li>Fair earnings for riders</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer small">
+    <div class="container">© <span id="year5"></span> SwiftBike</div>
+  </footer>
+
+  <script>
+    document.getElementById('year5').textContent = new Date().getFullYear();
+    document.getElementById('hamburger5').addEventListener('click', ()=>{
+      document.getElementById('mainNav5').classList.toggle('open');
+      document.getElementById('hamburger5').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

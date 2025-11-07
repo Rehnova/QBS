@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — SwiftBike</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/index.html" class="brand">Swift<span>Bike</span></a>
+      <nav id="mainNav6" class="nav-links">
+        <a href="/rides.html">Rides</a>
+        <a href="/delivery.html">Delivery</a>
+        <a href="/partner.html">Become a Rider</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-outline">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger6" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1>Contact Us</h1>
+      <p class="lead">Questions? Partnerships? Send us a message or reach out on WhatsApp.</p>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h3>Send a Message</h3>
+        <form id="contactForm" class="form">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Contact Info</h3>
+        <p>Phone: <a href="tel:+923001234567">+92 300 1234567</a></p>
+        <p>Email: <a href="mailto:info@swiftbike.com">info@swiftbike.com</a></p>
+        <h3>Head Office</h3>
+        <p>123 Main Street, Islamabad</p>
+        <h3>Business Hours</h3>
+        <p>Everyday — 6:00 AM to 12:00 AM</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer small">
+    <div class="container">© <span id="year6"></span> SwiftBike</div>
+  </footer>
+
+  <script>
+    document.getElementById('year6').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Message sent! (Demo only)');
+    });
+    document.getElementById('hamburger6').addEventListener('click', ()=>{
+      document.getElementById('mainNav6').classList.toggle('open');
+      document.getElementById('hamburger6').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+
