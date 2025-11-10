@@ -78,7 +78,7 @@ margin-top: -3vh;
   box-shadow: inset 0 -5px 3px orangered;
   padding: 0 10px;
   border-radius: 20px;
-  height: 50px;
+  height: 60px;
   font-size: 28px;
   font-weight: 600;
   text-decoration: none;
@@ -157,10 +157,15 @@ nav .menu{
 }
 
 .menu .logo a{
-box-shadow: inset 0 -2px 3px orangered;
-padding: 0;
+backdrop-filter: blur(10px);
+box-shadow: none;
+background: rgba(255, 255, 255, 0.8);
+  padding: 0;
+margin: 0;
 height: 70px;
 }
+
+
 
 nav label.burger{
   background: white;
