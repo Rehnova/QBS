@@ -171,10 +171,11 @@ nav label.burger{
   background: white;
   box-shadow: inset 0 -2px 3px orangered;
   padding: 10px 10px;
+	font-size: 18px;
 }
 
   .menu .logo a img{
-    height: 20vh;
+    height: 15vh;
   }
   .menu .logo a h1{
     display: none;
