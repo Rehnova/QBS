@@ -3,42 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — SwiftBike</title>
+  <title>About — QBS</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#0b2545">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="/index.html" class="brand">Swift<span>Bike</span></a>
-      <nav id="mainNav5" class="nav-links">
-        <a href="/rides.html">Rides</a>
-        <a href="/delivery.html">Delivery</a>
-        <a href="/partner.html">Become a Rider</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html" class="btn btn-outline">Contact</a>
-      </nav>
-      <button class="hamburger" id="hamburger5" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <nav>
+    <div class="menu">
+    <input type="checkbox" id="check">
+     <div class="logo"><a href="index.html"><img style="border-radius: 60%;" src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762752553/81eb48ae-e378-47e6-a17e-e84fbb797058_removalai_preview_iaeun8.png" alt="">
+          <h1>QBS</h1>
+        </a></div>
+        <ul>
+          <label class="burger cancel" for="check"><i class="fas fa-times"></i></label>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="rides.html">Book Ride</a></li>
+          <li><a href="delivery.html">Delivery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <label for="check" class="burger bars"><i class="fas fa-bars"></i></label>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main class="container">
     <section class="page-hero">
-      <h1>About SwiftBike</h1>
+      <h1>About QBS</h1>
       <p class="lead">We are a local bike service connecting riders and businesses since 20XX. Our mission is to provide fast, reliable and affordable transport.</p>
     </section>
 
     <section class="team-grid">
       <div class="team-card">
         <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7e2d7c1f9d6a8" alt="Founder">
-        <h4>Founder — Saad Khan</h4>
-        <p>Started with one bike, now supporting hundreds of riders across the city.</p>
+        <h4>Founder — Qasim Ali Khan</h4>
+        <p>Started with one bike, now supporting hundreds of riders across the city. Our vision is to be proficient in providing best services.</p>
       </div>
       <div class="team-card">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a9f4a1b9f6c" alt="Operations lead">
-        <h4>Operations — Maria Ali</h4>
+        <img src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762711486/IMG-20251106-WA0036_qc1fp5.jpg" alt="Operations lead">
+        <h4>Manager — Tauqeer Ahmed</h4>
         <p>Ensures on-time pickups and rider satisfaction.</p>
       </div>
     </section>
@@ -53,9 +63,29 @@
     </section>
   </main>
 
-  <footer class="footer small">
-    <div class="container">© <span id="year5"></span> SwiftBike</div>
+ <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="/index.html" class="brand">Qasim<span>Bike Service</span></a>
+        <p style="color: white;">Fast bike rides & delivery across your city. Available 24/7.</p>
+        <li><a href="">Service policy</a></li>
+        <li><a href="about.html">About us </a></li>
+        <li><a href="partner.html">Join us </a></li>
+        <li><a href="http://rehnova.vercel.app">Developer</a></li>
+      </div>
+
+      <div>
+        <p style="color: white;">Contact</p>
+        <p><a href="tel:+923001234567">+92 300 1234567</a></p>
+        <p><a href="mailto:info@swiftbike.com">info@qasim bikes.com</a></p>
+      </div>
+    </div>
+    <div class="container copy">© <span id="year"></span> QBS — All rights reserved. Designed and developed by <a style="color: white; " href="http://rehnova.vercel.app">Rehnova Digitals</a></div>
   </footer>
+
+  <!-- WhatsApp floating -->
+  <a href="https://wa.me/923001234567?text=Hello%20SwiftBike%20I%20want%20to%20book%20a%20service!"
+    class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
 
   <script>
     document.getElementById('year5').textContent = new Date().getFullYear();
