@@ -1,42 +1,52 @@
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>QBS— Rides & Deliveries</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <meta name="theme-color" content="#0b2545">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
 <body>
 
 
-
-  <header translate="no" class="nav">
-    <div class="container nav-inner">
-      <a href="/index.html" class="brand">Qasim <span>Bike Service</span></a>
-      <nav id="mainNav" class="nav-links">
-        <a href="/rides.html">Rides</a>
-        <a href="/delivery.html">Delivery</a>
-        <a href="/partner.html">Become a Rider</a>
-        <a href="/about.html">About us</a>
-        <a href="/contact.html" class="btn btn-outline">Contact</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <nav>
+    <div class="menu">
+      <input type="checkbox" id="check">
+      <div class="logo"><a href="index.html"><img style="border-radius: 60%;" src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762752553/81eb48ae-e378-47e6-a17e-e84fbb797058_removalai_preview_iaeun8.png" alt="">
+          <h1>QBS</h1>
+        </a></div>
+      <ul>
+        <label class="burger cancel" for="check"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rides.html">Book Ride</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="check" class="burger bars"><i class="fas fa-bars"></i></label>
     </div>
-  </header>
+    </div>
+  </nav>
 
   <main>
+
+
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <h1 >Fast. Reliable. Local.<br>Bike Rides & Same‑Day Deliveries</h1>
-          <p class="lead" >Affordable bike rides and city-wide deliveries with professional riders — available now in your area.</p>
+          <h1>Fast. Reliable. Local.<br>Bike Rides & Same‑Day Deliveries</h1>
+          <p class="lead">Affordable bike rides and city-wide deliveries with professional riders — available now in
+            your area.</p>
           <div class="cta-row">
             <a href="/rides.html" class="btn btn-primary">Book a Ride</a>
             <a href="/delivery.html" class="btn btn-ghost" style="color: black;">Request Delivery</a>
@@ -49,63 +59,64 @@
           </div>
         </div>
         <div class="hero-right">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f9c41b3c2fa2a7f1f81d7e5e25aeb3a" alt="Motorbike courier" class="hero-image">
+          <img src="https://t3.ftcdn.net/jpg/03/12/73/34/360_F_312733420_FOsr5T5SqgUdlvygsgcUzJuoj0bGkxpq.jpg"
+            alt="Motorbike courier" class="hero-image">
         </div>
       </div>
     </section>
 
     <section class="main-img">
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatem magnam doloribus? Sequi, fugiat delectus culpa consequuntur asperiores error aperiam adipisci quo, voluptates reprehenderit fuga necessitatibus ea, officiis dolorum quasi.</p>
-<img src="assets/img/management.png" alt="">
-      
+      <p> Our Network of Servcies </p>
+      <img src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762683770/1762683752396_cqbgaf.jpg" alt="">
+
     </section>
 
-<section>
-    <div class="outer-wrapper">
-  <div class="s-wrap s-type-1" role="slider">
-    <input type="radio" id="s-1" name="slider-control" checked="checked">
-    <input type="radio" id="s-2" name="slider-control">
-    <input type="radio" id="s-3" name="slider-control">
-    <input type="radio" id="s-4" name="slider-control">
-    <input type="radio" id="s-5" name="slider-control">
-    <ul class="s-content">
-      <li class="s-item s-item-1"></li>
-      <li class="s-item s-item-2"></li>
-      <li class="s-item s-item-3"></li>
-      <li class="s-item s-item-4"></li>
-      <li class="s-item s-item-5"></li>
-    </ul>
-    <div class="s-control">
-      <label class="s-c-1" for="s-1"></label>
-      <label class="s-c-2" for="s-2"></label>
-      <label class="s-c-3" for="s-3"></label>
-      <label class="s-c-4" for="s-4"></label>
-      <label class="s-c-5" for="s-5"></label>
-    </div>
-    <div class="s-nav">
-      <label class="s-nav-1 right" for="s-2"></label>
-      <label class="s-nav-2 left" for="s-1"></label>
-      <label class="s-nav-2 right" for="s-3"></label>
-      <label class="s-nav-3 left" for="s-2"></label>
-      <label class="s-nav-3 right" for="s-4"></label>
-      <label class="s-nav-4 left" for="s-3"></label>
-      <label class="s-nav-4 right" for="s-5"></label>
-      <label class="s-nav-5 left" for="s-4"></label>
-    </div>
-  </div>
+    <section>
+      <div class="outer-wrapper">
+        <div class="s-wrap s-type-1" role="slider">
+          <input type="radio" id="s-1" name="slider-control" checked="checked">
+          <input type="radio" id="s-2" name="slider-control">
+          <input type="radio" id="s-3" name="slider-control">
+          <input type="radio" id="s-4" name="slider-control">
+          <input type="radio" id="s-5" name="slider-control">
+          <ul class="s-content">
+            <li class="s-item s-item-1"></li>
+            <li class="s-item s-item-2"></li>
+            <li class="s-item s-item-3"></li>
+            <li class="s-item s-item-4"></li>
+            <li class="s-item s-item-5"></li>
+          </ul>
+          <div class="s-control">
+            <label class="s-c-1" for="s-1"></label>
+            <label class="s-c-2" for="s-2"></label>
+            <label class="s-c-3" for="s-3"></label>
+            <label class="s-c-4" for="s-4"></label>
+            <label class="s-c-5" for="s-5"></label>
+          </div>
+          <div class="s-nav">
+            <label class="s-nav-1 right" for="s-2"></label>
+            <label class="s-nav-2 left" for="s-1"></label>
+            <label class="s-nav-2 right" for="s-3"></label>
+            <label class="s-nav-3 left" for="s-2"></label>
+            <label class="s-nav-3 right" for="s-4"></label>
+            <label class="s-nav-4 left" for="s-3"></label>
+            <label class="s-nav-4 right" for="s-5"></label>
+            <label class="s-nav-5 left" for="s-4"></label>
+          </div>
+        </div>
 
-  <h1> Our Journey</h1>
-  <div class="s-wrap s-type-2" role="slider">
-    <ul class="s-content">
-      <li class="s-item s-item-1"></li>
-      <li class="s-item s-item-2"></li>
-      <li class="s-item s-item-3"></li>
-      <li class="s-item s-item-4"></li>
-      <li class="s-item s-item-5"></li>
-    </ul>
-  </div>
-  </section>
-  
+        <h1> Our Journey</h1>
+        <div class="s-wrap s-type-2" role="slider">
+          <ul class="s-content">
+            <li class="s-item s-item-1"></li>
+            <li class="s-item s-item-2"></li>
+            <li class="s-item s-item-3"></li>
+            <li class="s-item s-item-4"></li>
+            <li class="s-item s-item-5"></li>
+          </ul>
+        </div>
+    </section>
+
 
     <!-- Services -->
     <section class="section container services" id="services">
@@ -113,19 +124,34 @@
       <p class="section-sub">Everything you need — from quick city rides to on-demand parcel delivery.</p>
       <div class="grid-3">
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1520975682928-4b1d0b3b6f42?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5d9b6f6e0f9d7a3f0d6b0c3e74c0" alt="Quick rides">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/001/921/352/small/man-in-mask-on-scooter-delivering-a-box-free-vector.jpg"
+            alt="Quick rides">
           <h3>City Rides</h3>
           <p>Quick, affordable bike rides across town. Pay by cash or card.</p>
           <a href="/rides.html" class="link-inline">Book a ride →</a>
         </article>
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4f9f6a1fd9b7a1a0f6c8f9b2a9d1" alt="Parcel delivery">
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762682326/Untitled_design_20251109_145330_0000_pgx0zu.png"
+            alt="Parcel delivery">
           <h3>On‑Demand Delivery</h3>
           <p>Same‑day and scheduled deliveries for restaurants, shops and personal parcels.</p>
           <a href="/delivery.html" class="link-inline">Request pickup →</a>
         </article>
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b0a4f8b9c2ea6f0a2b8c6d9e4f1" alt="Rider registration">
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762682325/Untitled_design_20251109_145437_0000_b0t1l5.png"
+            alt="Rider registration">
+          <h3>Shift Registration</h3>
+          <p>Time saving and convinient shift rides for offices, colleges or school, We prioritize your time and comfort
+          </p>
+          <a href="/become-rider.html" class="link-inline">Sign up →</a>
+        </article>
+        <article class="card">
+          <img style="border-radius: 50%;"
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762682381/1762679939580_qwp4ox.png"
+            alt="Rider registration">
           <h3>Join as a Rider</h3>
           <p>Flexible hours, competitive pay and rider support. Start earning today.</p>
           <a href="/become-rider.html" class="link-inline">Sign up →</a>
@@ -139,19 +165,19 @@
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
-          <img src="assets/img/management.png" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5m7gkoDLLzxaBPm0OQYLZ-fhttsMW8yiMQ&s" alt="">
           <h4>Choose Service</h4>
           <p>Select a ride or delivery and fill the details.</p>
         </div>
         <div class="step">
           <div class="step-num">2</div>
-          <img src="assets/img/management.png" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWxzc0SAy6-7groN5UwdfH4kSsK0vI8i2rg&s" alt="">
           <h4>We Assign a Rider</h4>
           <p>A nearby rider accepts and heads to pickup.</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
-          <img src="assets/img/management.png" alt="">
+          <img src="data:image/png;base64,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" alt="">
           <h4>Track & Complete</h4>
           <p>Track progress and confirm delivery or drop‑off.</p>
         </div>
@@ -159,81 +185,213 @@
     </section>
 
 
-
-<section class="slideshow">
-
-  <div class="carousel" mask>
-	<article>
-		<img src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-		<h2>The Cross</h2>
-		<div>
-			<p>The Cross is a central symbol of Easter, representing the crucifixion of Jesus Christ and his sacrifice for humanity. It serves as a reminder of suffering, love, and redemption, and is often displayed during Holy Week and Easter Sunday to honor the foundation of Christian faith.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/7168798/pexels-photo-7168798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="easter eggs">
-		<h2>Easter Eggs</h2>
-		<div>
-			<p>Easter eggs are a colorful symbol of new life and rebirth, often decorated and hidden for festive hunts. The tradition comes from ancient spring rituals and was later adopted into Easter celebrations to represent the resurrection.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/4099179/pexels-photo-4099179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="hot cross buns">
-		<h2>Hot Cross Buns</h2>
-		<div>
-			<p>Hot cross buns are sweet, spiced buns marked with a cross on top, traditionally eaten on Good Friday. They originated in England and symbolize the crucifixion, with the cross representing Jesus and the spices recalling burial traditions.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/5145/animal-easter-chick-chicken.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="easter chick">
-		<h2>Easter Chick</h2>
-		<div>
-			<p>Easter chicks are a cheerful symbol of new life and beginnings, often seen alongside eggs in spring decorations. They represent birth and renewal, tying into the themes of Easter and the arrival of spring.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/2072158/pexels-photo-2072158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="easter bunny">
-		<h2>Easter Bunnies</h2>
-		<div>
-			<p>Easter bunnies are a popular symbol of spring and new life, often seen delivering colorful eggs to children.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/12787666/pexels-photo-12787666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="crown of thorms">
-		<h2>Crown of Thorns</h2>
-		<div>
-			<p>The Crown of Thorns symbolizes the suffering of Jesus before his crucifixion. It represents the pain he endured for humanity’s salvation and is a reminder of his sacrifice during Easter.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-</div>
-
+    <section class="rating">
+  <figure class="snip1157">
+  <blockquote>Fast and safe pickups. The riders were well-mannered and good. Overall experience was nice.
+    <div class="arrow"></div>
+  </blockquote>
+  <img src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762716122/IMG-20251108-WA0004_d3agkw.jpg" alt="pfp" />
+  <div class="author">
+    <h5>Fahad Ahsan<span> Manager Soneri Bank</span></h5>
+  </div>
+</figure>
+<figure class="snip1157 hover">
+  <blockquote>Thier delivery service is amazing. My parcel reached in perfect condition and was earlier than expected. They also give priority to thier cusotmer's time.
+    <div class="arrow"></div>
+  </blockquote>
+  <img src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762716123/c07fks_zrkctp.jpg" alt="pfp" />
+  <div class="author">
+    <h5>Rehan Bhatti<span> CEO Rehnova Digitals</span></h5>
+  </div>
+</figure>
+<figure class="snip1157">
+  <blockquote>Reliable and affordable. I always prefer to travel with them. Thier staff is friendly, booking process is smooth and are also punctual.
+    <div class="arrow"></div>
+  </blockquote>
+  <img src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762716122/profile-1585521746678-1988925483d3image_bng98k.jpg" alt="pfp" />
+  <div class="author">
+    <h5>Ahmed Ali<span> Senior developer </span></h5>
+  </div>
+</figure>
 </section>
 
-<section class="about">
+    <section class="reviews section">
+      <h2>Memories of our Services</h2>
 
-  <img src="assets/img/robot1.png" alt="">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime quas sed architecto labore eius praesentium excepturi inventore </p>
-          <a href="/delivery.html" class="link-inline">About us →</a>
+      <div class="track-wrapper">
+        <ul class="track">
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762685526/IMG-20251106-WA0013_obpukr.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762682331/1762680423725_pg46fq.png"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762682381/1762679939580_qwp4ox.png"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762685526/IMG-20251105-WA0025_eakj9t.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762685526/IMG-20251107-WA0012_1_f8esor.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762685527/IMG-20251106-WA0054_1_m1n2i4.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762685527/IMG-20251106-WA0010_o69m5u.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762695173/IMG-20251105-WA0061_vdogdk.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762695172/IMG-20251109-WA0066_ej69c8.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718113/IMG-20251105-WA0048_idiopq.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718113/IMG-20251105-WA0036_kjw7rx.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718114/IMG-20251105-WA0042_qx1t0q.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718114/IMG-20251105-WA0040_xpzxeo.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718114/IMG-20251105-WA0056_esrvtu.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718113/IMG-20251105-WA0053_r0j8n6.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762685528/IMG-20251106-WA0024_azgnnc.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718513/IMG-20251106-WA0006_tzjgpw.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718513/IMG-20251106-WA0027_xmxzea.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718512/IMG-20251107-WA0014_zxkr88.jpg"
+              alt="" width="300" height="300" />
+          </li>
+          <li class="track__item">
+            <img
+              src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762718513/IMG-20251106-WA0018_v2efnz.jpg"
+              alt="" width="300" height="300">
+          </li>
+        </ul>
+      </div>
+    </section>
 
-</section>
+    <section class="motion section">
+      <h2>Our Proud Partners</h2>
+
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681309/WhatsApp_Image_2025-11-09_at_1.59.48_PM_nsv6s2.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681317/WhatsApp_Image_2025-11-09_at_1.59.14_PM_avhibl.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681308/WhatsApp_Image_2025-11-09_at_2.00.03_PM_rhcsan.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681296/WhatsApp_Image_2025-11-09_at_2.00.17_PM_n9zf1k.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681291/WhatsApp_Image_2025-11-09_at_2.00.46_PM_zy8eez.jpg"
+            alt="Card Image" class="card-image" />
+        </div>
+        <div class="slider">
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681309/WhatsApp_Image_2025-11-09_at_1.59.48_PM_nsv6s2.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681317/WhatsApp_Image_2025-11-09_at_1.59.14_PM_avhibl.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681308/WhatsApp_Image_2025-11-09_at_2.00.03_PM_rhcsan.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681296/WhatsApp_Image_2025-11-09_at_2.00.17_PM_n9zf1k.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681291/WhatsApp_Image_2025-11-09_at_2.00.46_PM_zy8eez.jpg"
+            alt="Card Image" class="card-image" />
+        </div>
+        <div class="slider">
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681309/WhatsApp_Image_2025-11-09_at_1.59.48_PM_nsv6s2.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681317/WhatsApp_Image_2025-11-09_at_1.59.14_PM_avhibl.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681308/WhatsApp_Image_2025-11-09_at_2.00.03_PM_rhcsan.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681296/WhatsApp_Image_2025-11-09_at_2.00.17_PM_n9zf1k.jpg"
+            alt="Card Image" class="card-image" />
+          <img
+            src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762681291/WhatsApp_Image_2025-11-09_at_2.00.46_PM_zy8eez.jpg"
+            alt="Card Image" class="card-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+
+      <img src="https://res.cloudinary.com/dhcayqpqr/image/upload/v1762695174/1762685449156_gh2csg.png" alt="">
+      <div class="about-box">
+      <p>"Our vision is to become the most trusted and efficient bike ride and delivery service, connecting people and businesses through fast , safe and reliable transportation"</p>
+      <h5 style="display: flex; justify-content: center; font-size: 20px; text-align: center;">QBS Team</h5>
+      <a href="/delivery.html" class="link-inline">About us →</a>
+    </div>
+
+    </section>
 
 
 
@@ -247,39 +405,41 @@
         </div>
       </div>
     </section>
+      
+      
 
   </main>
 
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="/index.html" class="brand">Swift<span>Bike</span></a>
+        <a href="/index.html" class="brand">Qasim<span>Bike Service</span></a>
         <p style="color: white;">Fast bike rides & delivery across your city. Available 24/7.</p>
+        <li><a href="">Service policy</a></li>
+        <li><a href="about.html">About us </a></li>
+        <li><a href="partner.html">Join us </a></li>
+        <li><a href="http://rehnova.vercel.app">Developer</a></li>
       </div>
-      
+
       <div>
         <p style="color: white;">Contact</p>
-        <p><a href="tel:+923001234567">+92 300 1234567</a></p>
-        <p><a href="mailto:info@swiftbike.com">info@qasim bikes.com</a></p>
+        <p><a href="tel:+923001234567">+92 347 5408886</a></p>
+        <p><a href="mailto:info@swiftbike.com">info.qbs@gmail.com</a></p>
       </div>
     </div>
-    <div class="container copy">© <span id="year"></span> QBS — All rights reserved.</div>
+    <div class="container copy">© <span id="year"></span> QBS — All rights reserved. Designed and developed by <a
+        style="color: white; " href="http://rehnova.vercel.app">Rehnova Digitals</a></div>
   </footer>
 
   <!-- WhatsApp floating -->
-  <a href="https://wa.me/923001234567?text=Hello%20SwiftBike%20I%20want%20to%20book%20a%20service" class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+  <a href="https://wa.me/923001234567?text=Hello%20SwiftBike%20I%20want%20to%20book%20a%20service!"
+    class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
 
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Mobile nav
-    const ham = document.getElementById('hamburger');
-    const nav = document.getElementById('mainNav');
-    ham.addEventListener('click', ()=>{
-      nav.classList.toggle('open');
-      ham.classList.toggle('active');
-    });
   </script>
+  <script src="languages/script.js"></script>
 </body>
-</html>
 
+</html>
