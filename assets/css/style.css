@@ -148,12 +148,12 @@ nav label.cancel{
 @media (max-width:940px) {
   
   nav{
-    height: 11vh;
+    height: 8vh;
     padding: 0 10px;
   }
 
 nav .menu{
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .menu .logo a{
