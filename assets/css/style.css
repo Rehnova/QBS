@@ -159,7 +159,7 @@ nav .menu{
 .menu .logo a{
 box-shadow: inset 0 -2px 3px orangered;
 padding: 0;
-
+height: 70px;
 }
 
 nav label.burger{
