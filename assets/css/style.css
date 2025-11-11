@@ -160,6 +160,7 @@ nav .menu{
 .menu .logo a{
 backdrop-filter: blur(10px);
 box-shadow: none;
+	background: rgba(0,0,0,0.8);
   padding: 0;
 margin: 0;
 height: 40px;
@@ -176,7 +177,6 @@ nav label.burger{
 
   .menu .logo a img{
     height: 20vh;
-	  background:rgb(0,0,0,0.8);
   }
   .menu .logo a h1{
     display: none;
