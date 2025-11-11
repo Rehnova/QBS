@@ -165,7 +165,7 @@ box-shadow: none;
 	background: rgba(0,0,0,0.8);
   padding: 0;
 margin: 0;
-height: 40px;
+height: 50px;
 }
 
 
@@ -178,7 +178,7 @@ nav label.burger{
 }
 
   .menu .logo a img{
-    height: 25vh;
+    height: 20vh;
 	  object-fit: cover;
   }
   .menu .logo a h1{
