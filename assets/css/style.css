@@ -88,8 +88,8 @@ margin-top: -3vh;
   gap: 7px;
 }
 .menu .logo a img{
-  height: 100px;
-	
+  height: 150px;
+	background: transparent;
 }
 
 .menu .logo a h1{
@@ -176,7 +176,7 @@ nav label.burger{
 }
 
   .menu .logo a img{
-    height: 15vh;
+    height: 20vh;
 	  background:rgb(0,0,0,0.8);
   }
   .menu .logo a h1{
