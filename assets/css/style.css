@@ -74,9 +74,9 @@ margin-top: -3vh;
 
 
 .menu .logo a{
-  background: #ffffff;
-  box-shadow: inset 0 -5px 3px orangered;
-  padding: 0 10px;
+  background: rgb(0,0,0, 0.8);
+
+  padding: 10px 10px;
   border-radius: 20px;
   height: 60px;
   font-size: 28px;
@@ -85,12 +85,13 @@ margin-top: -3vh;
   color: #31344b;
   display: flex;
   align-items: center;
-  gap: 7px;
+  
 }
 .menu .logo a img{
   height: 150px;
 	background: transparent;
-	object-fit: cover;
+	object-fit: fill;
+  border-radius:20px;
 }
 
 .menu .logo a h1{
@@ -177,7 +178,7 @@ nav label.burger{
 }
 
   .menu .logo a img{
-    height: 15vh;
+    height: 25vh;
 	  object-fit: cover;
   }
   .menu .logo a h1{
@@ -227,7 +228,6 @@ nav label.burger{
     left: 0;
   }
 }
-
 
 .btn {
   display: inline-block;
