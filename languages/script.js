@@ -62,6 +62,22 @@ rightControl.addEventListener('click', () => onControlClick('right'));
       document.getElementById('hamburger2').classList.toggle('active');
     });
 
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', function(e) {
+    // create a hidden iframe dynamically
+    const iframe = document.createElement('iframe');
+    iframe.name = 'hidden_iframe_' + Math.random().toString(36).substring(2);
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
 
+    // set target of this form to the hidden iframe
+    form.target = iframe.name;
+
+    // reload the page after slight delay
+    setTimeout(() => {
+      window.location.reload();
+    }, 800);
+  });
+});
 
 
