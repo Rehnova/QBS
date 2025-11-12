@@ -62,22 +62,36 @@ rightControl.addEventListener('click', () => onControlClick('right'));
       document.getElementById('hamburger2').classList.toggle('active');
     });
 
-document.querySelectorAll('form').forEach(form => {
+
+
+document.querySelectorAll('.webhook-form').forEach(form => {
   form.addEventListener('submit', function(e) {
-    // create a hidden iframe dynamically
-    const iframe = document.createElement('iframe');
-    iframe.name = 'hidden_iframe_' + Math.random().toString(36).substring(2);
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
+    e.preventDefault(); // stop normal redirect
 
-    // set target of this form to the hidden iframe
-    form.target = iframe.name;
+    // collect form data
+    const formData = new FormData(form);
 
-    // reload the page after slight delay
-    setTimeout(() => {
-      window.location.reload();
-    }, 800);
+    // disable button
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    // send data manually to the webhook
+    fetch(form.action, {
+      method: 'GET',
+      body: formData
+    })
+    .then(() => {
+      alert('✅ Submitted successfully!');
+      form.reset();
+    })
+    .catch(() => {
+      alert('❌ Something went wrong. Try again.');
+    })
+    .finally(() => {
+      btn.disabled = false;
+      btn.textContent = 'Send';
+    });
   });
 });
-
 
