@@ -43,7 +43,7 @@
     <section class="grid-2">
       <div class="card">
         <h3>Send a Message</h3>
-        <form id="contactForm" class="form">
+        <form id="contactForm" class="form" action="https://qbs.onrender.com/webhook/35eb1692-2bad-4661-a77b-d0e7e0f9bd19" method="POST" onsubmit="return reloadSelf()">
           <label>Name<input type="text" name="name" required></label>
           <label>Email<input type="email" name="email" required></label>
           <label>Message<textarea name="message" rows="5" required></textarea></label>
@@ -88,11 +88,10 @@
   <a href="https://wa.me/923475408886?text=Hello%20QBS%20I%20want%20to%20book%20a%20service"
     class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
 
+  <script src="languages/script.js"></script>
   <script>
     document.getElementById('year6').textContent = new Date().getFullYear();
-    document.getElementById('contactForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('Message sent! (Demo only)');
+   
     });
     document.getElementById('hamburger6').addEventListener('click', ()=>{
       document.getElementById('mainNav6').classList.toggle('open');
