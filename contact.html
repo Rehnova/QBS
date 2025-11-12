@@ -97,6 +97,25 @@
       document.getElementById('mainNav6').classList.toggle('open');
       document.getElementById('hamburger6').classList.toggle('active');
     });
+
+    function reloadSelf() {
+  // Open the webhook submission in a hidden iframe
+  const iframe = document.createElement('iframe');
+  iframe.name = 'hidden_iframe';
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  // Set form target to this iframe temporarily
+  const form = document.getElementById('contactForm');
+  form.target = 'hidden_iframe';
+
+  // After a small delay, reload the page
+  setTimeout(() => {
+    window.location.reload();
+  }, 500); // 0.5 second delay gives time for submission
+
+  return true; // allow the form to submit
+}
   </script>
 </body>
 </html>
