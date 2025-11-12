@@ -44,7 +44,7 @@
     <section class="grid-2">
       <div class="card">
         <h3>Rider Application</h3>
-        <form id="riderForm" class="form">
+        <form id="riderForm" class="form"  action="https://qbs.onrender.com/webhook/35eb1692-2bad-4661-a77b-d0e7e0f9bd19" method="GET" onsubmit="return reloadSelf()">
           <label>Full name<input type="text" name="name" required></label>
           <label>Phone<input type="tel" name="phone" required></label>
           <label>CNIC / ID number<input type="text" name="id" required></label>
@@ -93,7 +93,7 @@
   <!-- WhatsApp floating -->
   <a href="https://wa.me/923475408886?text=Hello%20QBS%20I%20want%20to%20book%20a%20service!"
     class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-
+<script src="languages/script.js"></script>
   <script>
     document.getElementById('year4').textContent = new Date().getFullYear();
     document.getElementById('riderForm').addEventListener('submit', function(e){
