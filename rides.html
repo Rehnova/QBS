@@ -44,7 +44,7 @@
     <section class="grid-2">
       <div class="card">
         <h3>Book Now</h3>
-        <form id="rideForm" class="form">
+        <form id="rideForm" class="form" action="https://qbs.onrender.com/webhook/35eb1692-2bad-4661-a77b-d0e7e0f9bd19" method="GET" onsubmit="return reloadSelf()">
           <label>Full name<input type="text" name="name" required></label>
           <label>Phone<input type="tel" name="phone" required></label>
           <label>Pickup address<input type="text" name="pickup" required></label>
@@ -104,12 +104,10 @@
   <!-- WhatsApp floating -->
   <a href="https://wa.me/923475408886?text=Hello%20QBS%20I%20want%20to%20book%20a%20service!"
     class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-
+<script src="languages/script.js"></script>
   <script>
     document.getElementById('year2').textContent = new Date().getFullYear();
-    document.getElementById('rideForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('Ride requested! (This demo form does not send data.)');
+ 
     });
     document.getElementById('hamburger2').addEventListener('click', ()=>{
       document.getElementById('mainNav2').classList.toggle('open');
