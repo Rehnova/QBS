@@ -44,7 +44,7 @@
     <section class="grid-2">
       <div class="card">
         <h3>Book Now</h3>
-        <form id="rideForm" class="form" action="https://qbs.onrender.com/webhook/BOOK-A-RIDE" method="GET" onsubmit="return reloadSelf()">
+        <form id="rideForm" class="form" action="https://qbs.onrender.com/webhook/BOOK-A-RIDE" method="GET" >
           <label>Full name<input type="text" name="name" required></label>
           <label>Phone<input type="tel" name="phone" required></label>
           <label>Pickup address<input type="text" name="pickup" required></label>
@@ -114,27 +114,35 @@
       document.getElementById('hamburger2').classList.toggle('active');
     });
 
+ const form = document.getElementById('rideForm');
+    const messageDiv = document.createElement('div');
+    form.parentNode.insertBefore(messageDiv, form.nextSibling);
 
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-       function reloadSelf() {
-  // Open the webhook submission in a hidden iframe
-  const iframe = document.createElement('iframe');
-  iframe.name = 'hidden_iframe';
-  iframe.style.display = 'none';
-  document.body.appendChild(iframe);
+      const formData = new FormData(form);
 
-  // Set form target to this iframe temporarily
-  const form = document.getElementById('rideForm');
-  form.target = 'hidden_iframe';
+      try {
+        const response = await fetch(form.action, {
+          method: 'GET',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
 
-  // After a small delay, reload the page
-  setTimeout(() => {
-    window.location.reload();
-  }, 500); // 0.5 second delay gives time for submission
-
-  return true; // allow the form to submit
-}
-  
+        if (response.ok) {
+          messageDiv.textContent = 'Thank you! Your message has been sent.';
+          messageDiv.style.color = 'silver';  // style as you want
+          form.reset();
+        } else {
+          messageDiv.textContent = 'Oops! There was a problem submitting your form.';
+          messageDiv.style.color = 'red';
+        }
+      } catch (error) {
+        messageDiv.textContent = 'Oops! There was a problem submitting your form.';
+        messageDiv.style.color = 'red';
+      }
+    });
   </script>
 </body>
 </html>
