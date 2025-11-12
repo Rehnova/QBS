@@ -109,36 +109,6 @@
     });
 
 
-    
-  const form = document.getElementById('deliveryForm');
-const msg = document.getElementById('msg');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault(); // stop normal navigation
-
-  const btn = form.querySelector('button');
-  btn.disabled = true;
-  btn.textContent = 'Sending...';
-
-  try {
-    const data = new FormData(form);
-    await fetch('https://qbs.onrender.com/webhook/DELIVERY', {
-      method: 'GET',
-      body: data
-    });
-
-    // show success, reset form
-    msg.style.display = 'block';
-    form.reset();
-    setTimeout(() => msg.style.display = 'none', 4000);
-
-  } catch (err) {
-    alert('Error sending data.');
-  } finally {
-    btn.disabled = false;
-    btn.textContent = 'Request Ride';
-  }
-});
   </script>
 </body>
 </html>
