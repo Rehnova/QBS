@@ -57,6 +57,9 @@
           <label>Preferred time<input type="datetime-local" name="time"></label>
           <button class="btn btn-primary" type="submit">Request Pickup</button>
         </form>
+        <p id="msg" style="display:none; color:green; font-weight:bold;">
+  ✅ Thank you! Your ride has been requested.
+</p>
       </div>
 
       <div>
@@ -95,7 +98,7 @@
   <!-- WhatsApp floating -->
   <a href="https://wa.me/923475408886?text=Hello%20QBS%20I%20want%20to%20book%20a%20service!"
     class="whatsapp-float" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-<script src="languages/script.js"></script>
+<script src="langages/script.js"></script>
   <script>
     document.getElementById('year3').textContent = new Date().getFullYear();
   
@@ -105,7 +108,37 @@
       document.getElementById('hamburger3').classList.toggle('active');
     });
 
-  
+
+    
+  const form = document.getElementById('deliveryForm');
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault(); // stop normal navigation
+
+  const btn = form.querySelector('button');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  try {
+    const data = new FormData(form);
+    await fetch('https://qbs.onrender.com/webhook/DELIVERY', {
+      method: 'GET',
+      body: data
+    });
+
+    // show success, reset form
+    msg.style.display = 'block';
+    form.reset();
+    setTimeout(() => msg.style.display = 'none', 4000);
+
+  } catch (err) {
+    alert('Error sending data.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Request Ride';
+  }
+});
   </script>
 </body>
 </html>
