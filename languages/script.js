@@ -64,7 +64,7 @@ rightControl.addEventListener('click', () => onControlClick('right'));
 
 
 
-document.querySelectorAll('.webhook-form').forEach(form => {
+document.querySelectorAll('.form').forEach(form => {
   form.addEventListener('submit', function(e) {
     e.preventDefault(); // stop normal redirect
 
