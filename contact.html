@@ -43,7 +43,7 @@
     <section class="grid-2">
       <div class="card">
         <h3>Send a Message</h3>
-        <form id="contactForm" class="form" action="https://qbs.onrender.com/webhook/35eb1692-2bad-4661-a77b-d0e7e0f9bd19" method="GET" onsubmit="return reloadSelf()">
+        <form id="contactForm" class="form" action="https://qbs.onrender.com/webhook/contact" method="GET" onsubmit="return reloadSelf()">
           <label>Name<input type="text" name="name" required></label>
           <label>Email<input type="email" name="email" required></label>
           <label>Message<textarea name="message" rows="5" required></textarea></label>
@@ -98,24 +98,7 @@
       document.getElementById('hamburger6').classList.toggle('active');
     });
 
-    function reloadSelf() {
-  // Open the webhook submission in a hidden iframe
-  const iframe = document.createElement('iframe');
-  iframe.name = 'hidden_iframe';
-  iframe.style.display = 'none';
-  document.body.appendChild(iframe);
 
-  // Set form target to this iframe temporarily
-  const form = document.getElementById('contactForm');
-  form.target = 'hidden_iframe';
-
-  // After a small delay, reload the page
-  setTimeout(() => {
-    window.location.reload();
-  }, 500); // 0.5 second delay gives time for submission
-
-  return true; // allow the form to submit
-}
   </script>
 </body>
 </html>
