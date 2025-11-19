@@ -1360,11 +1360,11 @@ background: rgba(233, 233, 233, 0.5);
   color: white;
   padding: 0;
   border-radius: 60%;
-	box-shadow: 0px 8px 10px black;
   z-index: 999;
 }
 
 .whatsapp-float img{
+	box-shadow: 0px 8px 10px black;
   height: 100px;
   border-radius: 100%;
 }
