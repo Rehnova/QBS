@@ -49,22 +49,20 @@
           <label>CNIC / ID number<input type="text" name="id" required></label>
           <label>Current addrs<input type="text" name="address" required></label>
           <label>Permanent addrs<input type="text" name="address" required></label>
-          <label>Phone<input type="tel" name="phone" required></label>
-          
           <label>Duration<select id="days" name="days">
     <!-- Example: 0 to 30 days -->
     <option value="0">0 days</option>
     <option value="1">1 day</option>
     <option value="2">2 days</option>
     <option value="3">3 days</option>
-    <!-- add more as needed -->
   </select>
-  
   <!-- Hours selector -->
   <label for="hours">Hours (0-23):</label>
+            
 <input type="number" id="hours" name="hours" min="0" max="23" step="1">
-
-  </select></label>
+            
+  </select>
+          </label>
 
           <button class="btn btn-primary" type="submit">Request Rental</button>
         </form>
