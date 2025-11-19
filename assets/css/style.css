@@ -1354,19 +1354,17 @@ background: rgba(233, 233, 233, 0.5);
 
 .whatsapp-float {
   position: fixed;
-  right: 18px;
+  right: 15px;
   bottom: 18px;
   background: transparent;
   color: white;
   padding: 0;
   border-radius: 60%;
-  text-decoration: none;
-  font-weight: 700;
   z-index: 999;
 }
 
 .whatsapp-float img{
-  height: 70px;
+  height: 100px;
   border-radius: 100%;
 }
 .page-hero {
