@@ -187,7 +187,7 @@ nav label.burger{
 }
 
   .menu .logo a img{
-    height: 16vh;
+    height: 12vh;
 	  object-fit: cover;
   }
   .menu .logo a h1{
