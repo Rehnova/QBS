@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/index.html$
+RewriteRule ^.*$ /maintenance.html [R=503,L]
